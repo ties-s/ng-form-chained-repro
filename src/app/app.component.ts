@@ -17,7 +17,13 @@ export class AppComponent {
 
 	}
 
-	show(e: any) {
+	public a?= {
+		fn(_: any) {
+			return true;
+		}
+	}
+
+	test(e: any) {
 		console.log(this.form.get('test')?.value, e);
 	}
 }
